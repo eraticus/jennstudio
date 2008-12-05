@@ -1,0 +1,41 @@
+<%triplets=[
+	%w[alien alien2 alien3],
+	%w[atari bullhead butterfly],
+	%w[castle2 cityscape girls-on-horses],
+	%w[happy-girls moon-water saint],
+	%w[skulls supersize tree]
+] %>
+
+
+
+  <div class="feature">
+	<H3><FONT FACE="Times New Roman">Mission Mural Series</FONT></H3><P>
+	This body of work is a collection of the diverse murals created here in the mission
+	district.  Their rich colors and unique concepts jumped out at me. <br> These particular images are
+	portions of the murals that I was most drawn too. I intend to continue with this project, as there are
+	many more murals to discover.</P><P>
+	   <TABLE  CELLPADDING="5" WIDTH="100%">
+		
+		
+		<% for triplet in triplets%>
+		<tr>
+			<%for name in triplet%>
+			<%#=name%>
+			
+			<TD align="center">
+				<A HREF="../images/gallery.mission.mural/<%=name%>.jpg">
+					<IMG SRC="../images/gallery.mission.mural/<%=name%>.gif"
+	             		BORDER="0" ALT="" TITLE="<%=name%>"></A>
+				</TD>
+			
+			<%end%>
+			</tr>
+				<%end%>
+		
+
+	   </TABLE>
+
+	</div> 
+    <P>
+    </P></P> 
+  </div>
