@@ -1,0 +1,3 @@
+class ArtistBioController < ApplicationController
+  
+end

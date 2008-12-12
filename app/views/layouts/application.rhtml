@@ -52,22 +52,7 @@ function closesubnav(event){
   <div id="utility"> 
   
   </div> 
-  <div id="globalNav"> <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl"> 
-    <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr"> 
-    <div id="globalLink">
-		<%=link_to "home", {:controller=>:home}, {:class=>"glink", :style=>"color:#DB2645"}%>
-		<%=link_to "gallery", {:controller=>:gallery}, {:class=>"glink", :style=>"color:#DB2645"}%>
-	<a href="shopping.html" id="gl2" class="glink" onmouseover="ehandler(event,menuitem2);"><FONT COLOR="#CD5555">shopping</FONT> 
-      </a><a href="artist-bio.html" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);"><FONT COLOR="#EB5E66">artist 
-      bio</FONT> </a><a href="exhibitions.html" id="gl4" class="glink" onmouseover="ehandler(event,menuitem4);"><FONT COLOR="#C82536">exhibitions</FONT> 
-      </a><a href="services.html" id="gl5" class="glink" onmouseover="ehandler(event,menuitem5);"><FONT COLOR="#872657">services</FONT> 
-      </a><a href="press.releases.html" id="gl6" class="glink" onmouseover="ehandler(event,menuitem6);"><FONT COLOR="#993366">press 
-      releases</FONT> </a><a href="contact.html" id="gl7" class="glink" onmouseover="ehandler(event,menuitem7);"><FONT COLOR="#993399">contact</FONT> 
-      </a> </div>
-    <!--end globalLinks-->
-
-  </div> 
-  <!-- end globalNav --> 
+<%=render :partial=>'home/global_nav'%>
         <div id="subglobal1" class="subglobalNav"> 
     <a href="gallery.through.the.glass.html">Through the Glass</a> | <a href="gallery.mission.murals.html">Mission Murals</a> | <a href="gallery.the.mojave.html">The Mojave
 	</a> | <a href="gallery.by.the.sea.html">By the Sea</a> | <a href="gallery.safari.html">Safari</a> | <a href="gallery.mystic.wonders.html">Mystic Wonders</a> |
