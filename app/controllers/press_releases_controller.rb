@@ -1,0 +1,3 @@
+class PressReleasesController < ApplicationController
+  
+end

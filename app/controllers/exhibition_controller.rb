@@ -1,3 +1,0 @@
-class ExhibitionController < ApplicationController
-  
-end

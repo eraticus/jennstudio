@@ -101,14 +101,10 @@ function closesubnav(event){
 	</FONT></h2> 
 
 	</div> 
-  <div id="pageNav"> 
-    <div id="sectionLinks"> 
-	<%=link_to "What's New", :controller=>:home, :action=>:whats_new%>
-<a href="emulsion.transfers.html">About Polaroid Emulsion Transfer</a> <a href="ebay.store.html">Ebay Store</a> 
-	<a href="mailing.list.html">Mailing List Sign-Up</a> <a href="other.artists.html">Other Artists</a> <a href="copyright.html">Copyright Law</a> 
-    </div> 
-   
-  </div> 
+	
+	<%=render :partial=>'home/side_bar'%>
+	
+
 <div id="content"> 
 <!-- begin page contents -->
 <%=yield%>
